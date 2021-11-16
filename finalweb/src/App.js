@@ -6,7 +6,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Boton titulo="Boton" tamaño="22" color="rojo"> </Boton>
+        <Boton titulo=" Más Información " tamaño="boton"> </Boton>
+        <Boton titulo=" Ir a la Reunión " tamaño="boton1"> </Boton>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Citas pendientes

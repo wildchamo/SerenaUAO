@@ -1,3 +1,24 @@
-.Boton{
-    
+.boton{
+    margin: 0.5rem;
+    border-color: transparent;
+    background-color: #9E0C0F;
+    color: rgb(255, 255, 255);
+    height: 2.3rem;
+    font-size: 1rem;
+    font-weight: 550;
+    border-radius: 2rem;
+    width: 12rem;
+    box-shadow: 1px 1px 11px 1px #878787bd;    
+}
+.boton1{
+    margin: 0.5rem;
+    border-color: transparent;
+    background-color: #9E0C0F;
+    color: rgb(255, 255, 255);
+    height: 2.3rem;
+    font-size: 1rem;
+    font-weight: 550;
+    border-radius: 2rem;
+    width: 17rem;
+    box-shadow: 1px 1px 11px 1px #878787bd;    
 }
