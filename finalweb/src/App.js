@@ -8,6 +8,7 @@ function App() {
       <header className="App-header">
         <Boton titulo=" Más Información " tamaño="boton"> </Boton>
         <Boton titulo=" Ir a la Reunión " tamaño="boton1"> </Boton>
+        <Boton titulo=" Cancelar Cita " tamaño="boton2"> </Boton>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Citas pendientes
