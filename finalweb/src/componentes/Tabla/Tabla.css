@@ -1,0 +1,38 @@
+.wrapper{
+    overflow: auto;
+    border-radius: 15px;
+    border: 1px solid #FAD6D6;
+    width: 30.5rem;
+}
+
+table{
+    text-align: center;
+    width: 30.5rem;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-style: hidden;
+}
+
+.t-head{
+    background: #FAD6D6;
+    height: 4rem; 
+    color: var(--rojo);
+    font-size: 1.2rem;
+}
+
+.t-h-fecha{
+    width: 12rem;
+}
+
+.t-body{
+    height: 12rem;
+    color: #464646;
+}
+
+.t-b-text{
+    font-weight: 300;
+}
+
+.t-b-t-left{
+    text-align: left;
+}
