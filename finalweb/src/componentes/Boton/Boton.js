@@ -1,9 +1,9 @@
-import React from "react";
+ import React from "react";
+ import "./Boton.css";
 
-const Title = function (props){
-    console.log(props);
-    const {label}=props.label;
-    return (
-        <h1>{label}</h1>
-    )
-}
+ const Boton = ({titulo,tamaño}) => (
+    <div> 
+    <button className={tamaño}>{titulo}</button>     
+    </div>
+);
+export default Boton;
