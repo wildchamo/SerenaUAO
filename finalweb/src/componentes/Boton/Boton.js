@@ -2,8 +2,7 @@
  import "./Boton.css";
 
  const Boton = ({titulo,tamaño}) => (
-    <div> 
-    <button className={tamaño}>{titulo}</button>     
-    </div>
+    
+    <button className={tamaño}>{titulo}</button>
 );
 export default Boton;
