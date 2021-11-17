@@ -1,9 +1,9 @@
 import React from "react";
 import "./Campo.css"
 
-const Campo= function({tamaño, texto}){
+const Campo= function({tamaño, texto, tipo}){
     return(
-        <input className={tamaño} type="text" placeholder={texto}></input>
+        <input className={tamaño} type={tipo} placeholder={texto}></input>
     )
 }
 
