@@ -3,6 +3,8 @@ import "./Titulo.css";
 
 const Titulo=function({texto}){
     return(
-        <h1>{texto}</h1>
+        <h1 className="titulo">{texto}</h1>
     )
 }
+
+export default Titulo

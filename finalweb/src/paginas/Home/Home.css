@@ -5,8 +5,9 @@
 
 .h-agendar{
     display: flex;
-justify-content: center;
-align-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 28.5rem;
 }
 
 .dark{
@@ -39,4 +40,11 @@ object-fit: cover;
 
 .agendar-container{
     position: absolute;
+}
+
+.h-dates{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    font-size: .9rem;
 }
