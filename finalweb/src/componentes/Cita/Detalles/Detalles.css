@@ -1,0 +1,17 @@
+.detail-container{
+    display: flex;
+    justify-content: space-between;
+    width: 23.5rem;
+    font-size: .9rem;
+    align-items: center;
+    height: 3rem;
+    color: var(--gris);
+}
+
+.detail-title{
+
+}
+
+.detail-content{
+    font-weight: 300;
+}

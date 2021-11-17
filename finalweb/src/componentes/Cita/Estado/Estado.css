@@ -1,0 +1,20 @@
+.state-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 23.5rem;
+}
+
+.Aprobada{
+    font-weight: 300;
+    color: var(--verde);
+}
+
+.Preaprobada{
+    font-weight: 300;
+    color: var(--amarillo);
+}
+
+.i-date{
+
+}

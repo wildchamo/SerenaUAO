@@ -1,11 +1,25 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Boton from "../../componentes/Boton/Boton";
+import Cita from "../../componentes/Cita/Cita";
 import Titulo from "../../componentes/Titulo/Titulo";
 import bgimg from "../../imagenes/bg-home.jpg";
 import "./Home.css"
 
+const url="https://run.mocky.io/v3/85d46403-89e5-4993-aac2-435b63ddc4e7"
+
+//const axios = require('axios').default;
+const data = {
+    Psicologo: "Juan Sebastian Zuñiga",
+    FechaSol: "18/06/21",
+    Estado:"Preaprobada"
+}
 class Home extends Component {
+
+    componentDidMount() {
+        
+    }
+
     render() {
         return (
             <div className="home-body">
@@ -21,6 +35,9 @@ class Home extends Component {
                 </div>
                 <div className="h-dates">
                     <Titulo texto="Citas agendadas"/>
+                    <div className="dates-container">
+                        <Cita data={data}/>
+                    </div>
                 </div>
             </div>
         )

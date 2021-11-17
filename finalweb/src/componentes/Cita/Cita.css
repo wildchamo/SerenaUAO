@@ -1,0 +1,19 @@
+.date-card{
+    display: flex;
+    flex-direction: column;
+    width: 23.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 1.5rem;
+    background: #FFFFFF;
+    box-shadow: 5px 4px 17px 3px rgba(192, 192, 192, 0.67);
+    border-radius: 27px;
+    height: 17rem;
+}
+
+.more-date{
+    font-weight: 300;
+    color: var(--rojo);
+    text-decoration: underline;
+    margin: 0.3rem 0rem;
+}
