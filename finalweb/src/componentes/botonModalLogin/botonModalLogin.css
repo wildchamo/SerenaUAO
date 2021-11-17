@@ -1,0 +1,15 @@
+.botonModalLogin{
+    display: flex; 
+    padding-bottom:20px;  
+    cursor:pointer;
+}
+.iconM{
+    width:38px;
+    height:38px;
+}
+p{
+    padding-left: 24px;
+    color:var(--gris);
+    font-weight: 600;
+font-size: 14px;
+}
