@@ -12,10 +12,10 @@
 
 .dark{
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
-width: 100%;
-position: absolute;
-height: 49%;
-object-fit: cover;
+    width: 100%;
+    position: absolute;
+    height: 28.5rem;;
+    object-fit: cover;
 }
 
 .h-bg-container{
