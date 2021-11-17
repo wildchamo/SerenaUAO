@@ -27,9 +27,9 @@ function App() {
           <Route path="/" exact>
             <Login/>
           </Route>
-          <Home path="/Home">
+          <Route path="/Home">
             <Home/>
-          </Home>
+          </Route>
         </Switch>
       </div>
     </Router>
