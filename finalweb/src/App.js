@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Login from './paginas/Login/Login';
 import Home from './paginas/Home/Home';
 import { render } from "react-dom";
+import ModalLogin from './componentes/modalLogin/modalLogin';
 
 function App() {
   const [value, setValue] = useState(moment().locale('es', null));
@@ -21,6 +22,7 @@ function App() {
         <Calendario value={value} onChange={setValue}/>
         <Campo tamaño="campo-s" texto="Usuario"/>
         <Campo tamaño="campo-l" texto="Escriba aqui el motivo..."/> */}
+       
         <Switch>
           <Route path="/" exact>
             <Login/>
