@@ -14,6 +14,14 @@ const data = {
     FechaSol: "18/06/21",
     Estado:"Preaprobada"
 }
+
+const data2 = {
+    Psicologo: "Juan Sebastian Alba",
+    FechaSol: "19/05/21",
+    Estado:"Aprobada"
+}
+
+
 class Home extends Component {
 
     componentDidMount() {
@@ -37,6 +45,7 @@ class Home extends Component {
                     <Titulo texto="Citas agendadas"/>
                     <div className="dates-container">
                         <Cita data={data}/>
+                        <Cita data={data2}/>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,8 @@
 .home-body{
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    justify-content: center;
 }
 
 .h-agendar{
@@ -51,4 +53,8 @@
 
 .dates-container{
     margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    max-width: 55rem;
+    flex-wrap: wrap;
 }
