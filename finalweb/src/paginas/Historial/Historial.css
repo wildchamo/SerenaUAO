@@ -18,3 +18,15 @@
     margin-left: 1rem;
     margin-bottom: 1rem;
 }
+.contenedorMes{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+.linea{
+    width: 60rem;
+    height: 0.01rem;
+    margin:2.7rem;
+    margin-top: 2.7rem;
+}
