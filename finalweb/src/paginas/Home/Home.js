@@ -6,6 +6,7 @@ import Titulo from "../../componentes/Titulo/Titulo";
 import bgimg from "../../imagenes/bg-home.jpg";
 import "./Home.css"
 
+
 const url="https://run.mocky.io/v3/85d46403-89e5-4993-aac2-435b63ddc4e7"
 
 //const axios = require('axios').default;
@@ -46,7 +47,9 @@ class Home extends Component {
                     <div className="dates-container">
                         <Cita data={data}/>
                         <Cita data={data2}/>
+                        <Link to="/Historial">
                         <Boton titulo="Historial de citas" tamaño="botonh"/>
+                        </Link>                        
                     </div>
                 </div>
             </div>

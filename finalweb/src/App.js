@@ -8,6 +8,7 @@ import Campo from './componentes/Campo/Campo';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Login from './paginas/Login/Login';
 import Home from './paginas/Home/Home';
+import Historial from './paginas/Historial/Historial';
 import { render } from "react-dom";
 import ModalLogin from './componentes/modalLogin/modalLogin';
 
@@ -29,6 +30,9 @@ function App() {
           </Route>
           <Route path="/Home">
             <Home/>
+          </Route>
+          <Route path="/Historial">
+            <Historial/>
           </Route>
         </Switch>
       </div>
