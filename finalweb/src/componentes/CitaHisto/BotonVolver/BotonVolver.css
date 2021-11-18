@@ -2,4 +2,6 @@
 
 .b-volver{
     margin: 1rem;
+    border-color: transparent;
+    background-color: transparent;
 }
