@@ -3,7 +3,7 @@ import ModalGL from "../Modal/ModalGL";
 
 const ModalEstado = ({isOpen, closeModal}) => {
     return (
-        <ModalGL isOpen={isOpen} closeModal={closeModal}>
+        <ModalGL tipo="modal__dialog" isOpen={isOpen} closeModal={closeModal}>
             <h1>Photo</h1>
         </ModalGL>
     )
