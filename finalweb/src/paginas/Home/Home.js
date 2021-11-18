@@ -46,6 +46,7 @@ class Home extends Component {
                     <div className="dates-container">
                         <Cita data={data}/>
                         <Cita data={data2}/>
+                        <Boton titulo="Historial de citas" tamaño="botonh"/>
                     </div>
                 </div>
             </div>

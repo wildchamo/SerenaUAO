@@ -55,6 +55,7 @@
     margin-top: 2rem;
     display: flex;
     justify-content: space-between;
-    max-width: 55rem;
+    max-width: 71rem;
     flex-wrap: wrap;
+    align-items: end;
 }
