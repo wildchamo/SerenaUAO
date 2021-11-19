@@ -1,7 +1,7 @@
 import './modal2.css';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import XBlanca from "../../imagenes/Xfondoblanco.png";
-
+import Campo  from "../../componentes/Campo/Campo.js"
 const Modal2 = ({ handleClose, show, children,data }) => {
   const {texto}=data
   const showHideClassName = show ? "modal display-block" : "modal display-none";
@@ -17,6 +17,11 @@ const Modal2 = ({ handleClose, show, children,data }) => {
         </Link>
        <h4> Soporte </h4>
         </div> 
+
+        <div className="Mensajes"> 
+        <Campo tamaño="campo-l" tipo="texto" texto="Escribe un mensaje ..."/>
+        </div>
+
       </section>
     </div>
   );
