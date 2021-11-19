@@ -1,0 +1,20 @@
+.restablecerTexto{
+    display: flex;
+    flex-direction:  column;
+    justify-content: center;
+    padding-left: 68px;
+    padding-right: 68px;
+}
+.restablecer h2{
+    font-size: 48px;
+    color:var(--rojo);
+    font-weight: 400;
+    line-height: 42px;
+}
+.restablecer p{
+    font-size:32px;
+    color:black;
+}
+.restablecer input{
+    margin:0 auto;
+}

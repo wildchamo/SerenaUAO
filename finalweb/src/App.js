@@ -11,6 +11,7 @@ import Home from './paginas/Home/Home';
 import Historial from './paginas/Historial/Historial';
 import { render } from "react-dom";
 import ModalLogin from './componentes/modalLogin/modalLogin';
+import Restablecer from './paginas/restablecer/restablecer';
 
 function App() {
   const [value, setValue] = useState(moment().locale('es', null));
@@ -33,6 +34,9 @@ function App() {
           </Route>
           <Route path="/Historial">
             <Historial/>
+          </Route>
+          <Route path="/restablecer">
+            <Restablecer/>
           </Route>
         </Switch>
       </div>

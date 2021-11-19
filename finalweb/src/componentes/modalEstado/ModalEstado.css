@@ -1,0 +1,24 @@
+.m-est-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 45rem;
+    padding: 0 3rem;
+}
+
+.m-est-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.m-est-t{
+    margin: 0;
+    font-size: 1.4rem;
+    color: var(--gris);
+    text-align: left;
+    margin-bottom: .5rem;
+}
