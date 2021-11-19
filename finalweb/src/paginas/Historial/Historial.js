@@ -11,7 +11,9 @@ const data = {
     titulo: "Cita1",
     hora:"10:00 am",
     fecha: "18/06/21"   
-}
+} 
+
+
 
 class Historial extends Component {
 
@@ -28,7 +30,7 @@ class Historial extends Component {
                 <div className="contenedorMes">
                     <img className="linea" src={linea}></img>
                     <h1 className="tituloMes">Enero</h1>
-                    <img className="linea" src={linea}></img>
+                    <img className="linea" src={linea}></img> 
                 </div>
                 <div className="contenedorCitasHisto">
                     <CitaHisto data={data}></CitaHisto>
