@@ -4,9 +4,9 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Boton from "../../componentes/Boton/Boton";
 import Campo from "../../componentes/Campo/Campo";
 import Modal from "./modal.js";
+import BotonSoporte from "./botonSoporte";
 import Headerr from "../../componentes/headerr/headerr.js";
 import "./restablecer.css";
-import Soporte from "../../imagenes/soporte.png";
 class Restablecer extends Component {
   constructor() {
     super();
@@ -28,6 +28,7 @@ class Restablecer extends Component {
     return (
       <div className="restablecer">
         <Headerr />
+        <BotonSoporte/>
         <div className="restablecerTexto">
           <h2>Restablecer contraseña</h2>
           <p>
@@ -47,7 +48,7 @@ class Restablecer extends Component {
           </button>
         </div>
 
-        <img className="botonSoporte" src={Soporte}></img>
+        
 
 
         <Modal show={this.state.show} handleClose={this.hideModal}>
