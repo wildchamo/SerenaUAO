@@ -13,10 +13,12 @@ import BotonSoporte from "../restablecer/botonSoporte";
 import ModalCancel from "../../componentes/modalCancel/ModalCancel";
 import ModalCalen from "../../componentes/modalCalendario/ModalCalen";
 import moment from "moment";
+import cargarDatos from "../../hooks/Rest";
 
 const url = "https://run.mocky.io/v3/85d46403-89e5-4993-aac2-435b63ddc4e7"
 
 //const axios = require('axios').default;
+
 const data = {
     Psicologo: "Juan Sebastian Zuñiga",
     PeriodoAc: "2021-03",
@@ -45,6 +47,7 @@ function Home() {
 
     return (
         <div className="home-body">
+
             <BotonSoporte/>
             <div className="h-agendar">
                 <div className="h-bg-container">

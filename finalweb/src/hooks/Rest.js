@@ -1,6 +1,7 @@
+import React from "react";
 
 function cargarDatos(url){
-fecth(url)
+fetch(url)
   .then((response) => {
     return response.json();
   })
@@ -8,3 +9,4 @@ fecth(url)
     console.log(recurso);
   });
 }
+export default cargarDatos;
