@@ -11,16 +11,17 @@
   .modal-mainU {
     position: fixed;
     background: white;
-    width: 348px;
-    height: 100vh;
     border-radius: 27px;
-    top: 50%;
-    right: -16%;
+    top: 22%;
+    width: 298px;
+height: 198px;
+    right: -11%;
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-right: 5rem;
+    padding:20px;
+    padding-bottom: 0px;
   }
   .modal p {
     font-style: normal;

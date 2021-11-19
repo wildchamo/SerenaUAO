@@ -36,7 +36,9 @@ class DatosUsuario extends Component {
           show={this.state.show}
           handleClose={this.hideModal}
         >
-          <div></div>
+          <div>
+            
+          </div>
         </ModalU>
       </div>
     );
