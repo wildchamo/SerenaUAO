@@ -1,12 +1,12 @@
 import React from "react";
-import volver from "../../../imagenes/volveratrasrojo.png"
+import volver from "../../../imagenes/volveratrasrojo.png";
 import "./BotonVolver.css";
 
-const getBoton=function(){  
-       return(<button className="b-volver"><img className="i-volver" src={volver}></img></button>)   
+const getBotonVolver=function({imagen}){  
+       return(<button className="b-volver"><img className="i-volver" src={imagen}></img></button>)   
 }
 
-const Boton = () => (
-   getBoton()
+const BotonVolver = (imagen) => (
+   getBotonVolver(imagen)
 );
-export default Boton;
+export default BotonVolver;

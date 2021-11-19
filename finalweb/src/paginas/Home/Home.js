@@ -8,7 +8,7 @@ import "./Home.css"
 import ModalGL from "../../componentes/Modal/ModalGL";
 import useModal from "../../hooks/useModal";
 import ModalEstado from "../../componentes/modalEstado/ModalEstado";
-
+import CuestionarioModal from "../../componentes/CuestionarioModal/CuestonarioModal";
 
 
 const url = "https://run.mocky.io/v3/85d46403-89e5-4993-aac2-435b63ddc4e7"
@@ -32,6 +32,7 @@ const data2 = {
 
 function Home() {
     const [isOpenmodalEstado, openmodalEstado, closemodalEstado] = useModal(false);
+    const [isOpenCuest, openmodalCuest, closeModalCuest] = useModal(false);
 
     return (
         <div className="home-body">
@@ -42,7 +43,7 @@ function Home() {
                 </div>
                 <div className="agendar-container">
                     <h1 className="agendar">Agenda tu cita con un psicólogo UAO</h1>
-                    <Boton tamaño="boton3" titulo="Agendar"></Boton>
+                    <Boton tamaño="boton3" titulo="Agendar" evento={openmodalCuest} ></Boton>  
                 </div>
             </div>
             <div className="h-dates">
@@ -56,6 +57,7 @@ function Home() {
                 </div>
             </div>
             <ModalEstado isOpen={isOpenmodalEstado} closeModal={closemodalEstado} data={data} />
+            <CuestionarioModal isOpen={isOpenCuest} closeModal={closeModalCuest}  />
         </div>
     )
 }

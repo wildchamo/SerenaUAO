@@ -2,6 +2,7 @@ import React from "react";
 import Boton from "../Boton/Boton";
 import "./CitaHisto.css"
 import Detalle from "../Cita/Detalles/Detalles";
+//import CuestionarioModal from "../CuestionarioModal/CuestonarioModal";
 
 
 const CitaHisto=function({data}){
@@ -12,7 +13,7 @@ const CitaHisto=function({data}){
             <h1 className="tituloCitaHisto">{titulo}</h1>
             <Detalle titulo="Hora:" contenido={hora}/>
             <Detalle titulo="Fecha:" contenido={fecha}/>
-            <Boton tamaño="botonfit" titulo="Más Información"></Boton>
+            <Boton tamaño="botonfit" titulo="Más Información" ></Boton>
            
         </div>
     )

@@ -1,0 +1,8 @@
+.tituloModal{
+    display: flex;
+    flex-direction: row;
+}
+.tituloModalTexto{
+   color:#9E0C0F;
+   text-decoration: none;
+}
