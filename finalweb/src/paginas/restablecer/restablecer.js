@@ -19,9 +19,10 @@ class Restablecer extends Component {
                 <p>Ingresa tu correo o nombre de usuario</p>
                 <Campo tamaño="campo-s" tipo="texto"/>
 
-                <Link to="/">
+                {/* <Link to="/">
                         <Boton tamaño="boton1" titulo="Enviar"></Boton>
-                    </Link>
+                    </Link> */}
+                        <Boton tamaño="boton1" titulo="Enviar"></Boton>
                 </div>
  
                 
