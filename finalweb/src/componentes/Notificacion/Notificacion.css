@@ -1,0 +1,17 @@
+.notificacion{
+    background-color: rgb(255, 255, 255);
+    border-radius: 2rem;
+    width: 25rem;
+    
+}
+.notificacionesCont{
+    height: 15rem;
+    border-top-style: solid;
+    border-top-color: gray;
+    border-top-width: thin;
+}
+.textoNotif{
+    font-size: 1rem;
+    font-weight: 200;
+    color: gray;
+}
