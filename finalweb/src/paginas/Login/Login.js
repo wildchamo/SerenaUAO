@@ -19,7 +19,7 @@ class Login extends Component {
                     <div className="l-field-container">
                         <Campo tamaño="campo-s" texto="Usuario" tipo="texto"/>
                         <Campo tamaño="campo-s" texto="Contraseña" tipo="password"/>
-                        <Link to="/Contraseña" className="link-pass">
+                        <Link to="/restablecer" className="link-pass">
                             <h4 className="f-pass">¿Olvido su nombre de usuario o contraseña?</h4>
                         </Link>
                     </div>
