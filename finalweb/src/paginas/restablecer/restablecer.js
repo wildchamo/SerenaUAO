@@ -6,7 +6,7 @@ import Campo from "../../componentes/Campo/Campo";
 import Modal from "./modal.js";
 import Headerr from "../../componentes/headerr/headerr.js";
 import "./restablecer.css";
-
+import Soporte from "../../imagenes/soporte.png";
 class Restablecer extends Component {
   constructor() {
     super();
@@ -46,6 +46,9 @@ class Restablecer extends Component {
             Enviar
           </button>
         </div>
+
+        <img className="botonSoporte" src={Soporte}></img>
+
 
         <Modal show={this.state.show} handleClose={this.hideModal}>
           <h2>Correo enviado con éxito</h2>
