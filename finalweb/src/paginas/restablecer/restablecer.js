@@ -24,7 +24,7 @@ class Restablecer extends Component {
                     </Link>
                 </div>
  
-
+                
             </div>
             
 
