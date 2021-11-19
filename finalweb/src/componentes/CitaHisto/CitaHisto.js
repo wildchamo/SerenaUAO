@@ -5,7 +5,7 @@ import Detalle from "../Cita/Detalles/Detalles";
 //import CuestionarioModal from "../CuestionarioModal/CuestonarioModal";
 
 
-const CitaHisto=function({data}){
+const CitaHisto=function({data, evento}){
     const {Citaid,hora,FechaSol}=data
 
     return(
@@ -13,7 +13,7 @@ const CitaHisto=function({data}){
             <h1 className="tituloCitaHisto"> Cita{Citaid}</h1>
             <Detalle titulo="Hora:" contenido={hora}/>
             <Detalle titulo="Fecha:" contenido={FechaSol}/>
-            <Boton tamaño="botonfit" titulo="Más Información" ></Boton>           
+            <Boton tamaño="botonfit" titulo="Más Información" evento={evento} ></Boton>           
         </div>
     )
 }
