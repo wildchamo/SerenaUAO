@@ -1,0 +1,8 @@
+.tituloModal{
+    display: flex;
+    flex-direction: row;
+}
+.tituloModal-t{
+   color: rgb(226, 43, 43);
+   
+}
