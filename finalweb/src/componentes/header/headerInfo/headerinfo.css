@@ -1,3 +1,7 @@
 .headerInfo{
     width:328px;
+    display: flex;
+}
+.headerInfo img{
+cursor: pointer;
 }

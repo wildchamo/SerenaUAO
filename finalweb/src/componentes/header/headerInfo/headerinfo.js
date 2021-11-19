@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./headerinfo.css";
 import ModalH from "./modalh.js";
-
+import DatosUsuario from "./datosUsuario.js"
 import Campana from "../../../imagenes/notificaciones.png";
 
 class HeaderInfo extends Component {
@@ -27,6 +27,7 @@ class HeaderInfo extends Component {
       <div className="headerInfo">
         <img src={Campana} onClick={this.showModal}>
         </img>
+        <DatosUsuario/>
 
         <ModalH show={this.state.show} handleClose={this.hideModal}></ModalH>
       </div>

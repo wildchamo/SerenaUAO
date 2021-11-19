@@ -1,0 +1,23 @@
+.datosU {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+.datosU p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 35px;
+  color: #fff;
+  padding-left: 4px;
+}
+.datosU .elipse {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+}
+.datosU .flecha {
+  width: 29px;
+  height: 22px;
+  padding: 0;
+}
