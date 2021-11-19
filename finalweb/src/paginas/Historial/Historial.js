@@ -12,9 +12,9 @@ import BotonSoporte from "../restablecer/botonSoporte";
 //import CuestionarioModal from "../../componentes/CuestionarioModal/CuestonarioModal";
 
 const data = {
-    titulo: "Cita1",
+    Citaid: "1",
     hora:"10:00 am",
-    fecha: "18/06/21"   
+    FechaSol: "18/06/21"   
 } 
 
 
