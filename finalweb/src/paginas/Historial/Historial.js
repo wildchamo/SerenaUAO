@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-import Boton from "../../componentes/Boton/Boton";
 import Titulo from "../../componentes/Titulo/Titulo";
 import "./Historial.css"
 import BotonVolver from "../../componentes/CitaHisto/BotonVolver/BotonVolver";
 import CitaHisto from "../../componentes/CitaHisto/CitaHisto";
-import linea from "../../imagenes/linea.jpeg"
+import linea from "../../imagenes/linea.jpeg";
+import volver from "../../imagenes/volveratrasrojo.png";
+//import botonx from "../../imagenes/Xfondoblanco.png";
+//import boton2 from "../../imagenes/Xfondorojo.png";
 
 const data = {
     titulo: "Cita1",
@@ -22,7 +24,8 @@ class Historial extends Component {
             <div className="historial-body">
                 <div className="Titulo">
                     <Link to="/Home">
-                        <BotonVolver/>
+                        <BotonVolver imagen={volver} />
+                      
                     </Link> 
                     <Titulo texto="Historial de Citas"/>
                
