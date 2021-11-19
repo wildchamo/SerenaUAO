@@ -3,6 +3,14 @@
   cursor: pointer;
   align-items: center;
 }
+.datosU p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 35px;
+  color: #fff;
+  padding-left: 4px;
+}
 .datosU .elipse {
   width: 50px;
   height: 50px;
