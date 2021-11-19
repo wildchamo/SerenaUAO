@@ -9,7 +9,7 @@ import ModalGL from "../../componentes/Modal/ModalGL";
 import useModal from "../../hooks/useModal";
 import ModalEstado from "../../componentes/modalEstado/ModalEstado";
 import CuestionarioModal from "../../componentes/CuestionarioModal/CuestonarioModal";
-
+import BotonSoporte from "../restablecer/botonSoporte";
 
 const url = "https://run.mocky.io/v3/85d46403-89e5-4993-aac2-435b63ddc4e7"
 
@@ -36,6 +36,7 @@ function Home() {
 
     return (
         <div className="home-body">
+            <BotonSoporte/>
             <div className="h-agendar">
                 <div className="h-bg-container">
                     <img className="h-bg-img" src={bgimg}></img>
