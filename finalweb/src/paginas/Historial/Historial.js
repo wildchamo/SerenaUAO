@@ -8,6 +8,7 @@ import linea from "../../imagenes/linea.jpeg";
 import volver from "../../imagenes/volveratrasrojo.png";
 import TituloModal from "../../componentes/TituloModal/TituloModal";
 import BotonSoporte from "../restablecer/botonSoporte";
+import Notificacion from "../../componentes/Notificacion/Notificacion";
 
 //import CuestionarioModal from "../../componentes/CuestionarioModal/CuestonarioModal";
 
@@ -52,7 +53,7 @@ class Historial extends Component {
                     <CitaHisto data={data}></CitaHisto>
                     <CitaHisto data={data}></CitaHisto>
                     <CitaHisto data={data}></CitaHisto>
-                </div> 
+                </div>                 
             </div>
         )
     }
