@@ -98,7 +98,10 @@
 }
 
 .botonCuestionario{
-    
+    width: 20rem;
+    background-color: white;
+    border-color: red;
+    border-radius: 1rem;
 }
 .i-reloj{
     width: 2rem;

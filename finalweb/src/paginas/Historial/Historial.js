@@ -7,6 +7,7 @@ import CitaHisto from "../../componentes/CitaHisto/CitaHisto";
 import linea from "../../imagenes/linea.jpeg";
 import volver from "../../imagenes/volveratrasrojo.png";
 import TituloModal from "../../componentes/TituloModal/TituloModal";
+//import CuestionarioModal from "../../componentes/CuestionarioModal/CuestonarioModal";
 
 const data = {
     titulo: "Cita1",
@@ -19,6 +20,7 @@ const data = {
 class Historial extends Component {
 
     render() {
+    
         return (
             <div className="historial-body">
                 <div className="Titulo">

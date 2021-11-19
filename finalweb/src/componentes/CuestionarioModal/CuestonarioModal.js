@@ -5,10 +5,9 @@ import TituloModal from "../TituloModal/TituloModal";
 import boton from "../../imagenes/volveratrasrojo.png";
 import Boton from "../Boton/Boton";
 
-const CuestionarioModal = ({isOpen, closeModal, data}) => {
-    const {}=data
+const CuestionarioModal = ({isOpenCuest, closeModalCuest}) => {
     return (
-        <ModalGL tipo="cuestionario-modal" isOpen={isOpen} closeModal={closeModal}>
+        <ModalGL tipo="cuestionario-modal" isOpen={isOpenCuest} closeModal={closeModalCuest}>
             <div >
               <TituloModal titulo=" Agenda tu Cita " imagen={boton}></TituloModal>
               <h3>Ayúdanos a conocer más sobre tu problema para conectarte con el psicólogo indicado</h3>
