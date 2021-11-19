@@ -12,12 +12,15 @@
   position: fixed;
   background: white;
   width: 348px;
-  height: 90%;
+  height: 100vh;
   border-radius: 27px;
-
   top: 50%;
   right: -16%;
   transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 5rem;
 }
 .modal p {
   font-style: normal;
@@ -37,13 +40,17 @@
   display: none;
 }
 .tituloModalJ {
-  height: 66px;
-  width: 228px;
+  /* height: 66px;
+  width: 228px; */
   background-color: var(--rojo);
   border-radius: 0 0 10px 10px;
-  padding: 9px 108px 9px 15px;
+  /* padding: 9px 108px 9px 15px; */
   display: flex;
-  margin-bottom: 366px;
+  margin-bottom: auto;
+  height: 4rem;
+  justify-content: left;
+  align-items: center;
+  padding: 0rem 1rem;
 }
 .tituloModalJ h4 {
     font-style: normal;
