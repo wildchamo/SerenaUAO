@@ -32,7 +32,7 @@ const data2 = {
 
 function Home() {
     const [isOpenmodalEstado, openmodalEstado, closemodalEstado] = useModal(false);
-    const [isOpenCuest, closeModalCuest] = useModal(false);
+    const [isOpenCuest, openmodalCuest, closeModalCuest] = useModal(false);
 
     return (
         <div className="home-body">
@@ -43,7 +43,7 @@ function Home() {
                 </div>
                 <div className="agendar-container">
                     <h1 className="agendar">Agenda tu cita con un psicólogo UAO</h1>
-                    <Boton tamaño="boton3" titulo="Agendar" evento={closeModalCuest} ></Boton>  
+                    <Boton tamaño="boton3" titulo="Agendar" evento={openmodalCuest} ></Boton>  
                 </div>
             </div>
             <div className="h-dates">
