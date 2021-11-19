@@ -10,6 +10,7 @@ import useModal from "../../hooks/useModal";
 import ModalEstado from "../../componentes/modalEstado/ModalEstado";
 import CuestionarioModal from "../../componentes/CuestionarioModal/CuestonarioModal";
 import BotonSoporte from "../restablecer/botonSoporte";
+import ModalCancel from "../../componentes/modalCancel/ModalCancel";
 
 const url = "https://run.mocky.io/v3/85d46403-89e5-4993-aac2-435b63ddc4e7"
 
@@ -32,7 +33,10 @@ const data2 = {
 
 function Home() {
     const [isOpenmodalEstado, openmodalEstado, closemodalEstado] = useModal(false);
+    const [isOpenCancel, openmodalCancel, closeModalCancel] = useModal(false);
+
     const [isOpenCuest, openmodalCuest, closeModalCuest] = useModal(false);
+    const [isOpenCalen, openmodalCalen, closeModalCalen] = useModal(false);
 
     return (
         <div className="home-body">
@@ -57,8 +61,19 @@ function Home() {
                     </Link>
                 </div>
             </div>
-            <ModalEstado isOpen={isOpenmodalEstado} closeModal={closemodalEstado} data={data} />
+            
+            {/*Modales estado de cita*/}
+            <ModalEstado isOpen={isOpenmodalEstado} closeModal={closemodalEstado} data={data} openModalCancel={openmodalCancel}/>
+            <ModalCancel 
+                isOpen={isOpenCancel} 
+                closeModal={closeModalCancel} 
+                openmodalEstado={openmodalEstado} 
+                tipo="Cancelar" icon={true} titulo="¿Estas seguro de que deseas Cancelar esta cita?" descripción="¡Esta acción es irreversible!"/>
+            {/*Fin modales estado de cita*/}
+            
+            {/*Modales agendar citas*/}
             <CuestionarioModal isOpen={isOpenCuest} closeModal={closeModalCuest}  />
+            
         </div>
     )
 }

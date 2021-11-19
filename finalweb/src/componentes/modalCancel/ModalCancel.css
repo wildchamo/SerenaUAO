@@ -1,0 +1,22 @@
+.m-cancel-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 25rem;
+    padding: 0 2rem;
+    padding-bottom: 1rem;
+}
+
+.m-cancel-btn-back{
+    align-self: flex-start;
+}
+
+.m-cancel-title{
+    margin: 0;
+    color: var(--gris);
+}
+
+.m-cancel-desc{
+    color: #868686;
+}

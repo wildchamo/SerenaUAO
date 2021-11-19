@@ -17,6 +17,19 @@
     width: 36rem;
     height: 46rem;
     border-radius: 1rem;
+    padding-top: 1rem;
+}
+
+.modal-cancelar {
+    background: #fff;
+    padding: 10px;
+    width: 25.3rem;
+    height: 28.3rem;
+    border-radius: 1rem;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-open  {

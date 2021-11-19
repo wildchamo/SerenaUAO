@@ -1,7 +1,7 @@
 .cuestionario-modal{
     display: flex;
     flex-direction: row;
-    padding: 0.5rem;
+    padding: .7rem 1rem;
     width: 55vw;
     height: auto;
     background-color: white;
