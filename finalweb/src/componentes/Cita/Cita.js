@@ -11,7 +11,6 @@ import modalEstado from "../modalEstado/ModalEstado";
 const Cita=function({data, evento}){
     const {Psicologo,FechaSol,Estado}=data
 
-    //const [evento]=useModal(false);
     return(
         <div className="date-card">
             <State estado={Estado}/>

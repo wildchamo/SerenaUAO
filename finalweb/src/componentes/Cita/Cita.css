@@ -16,4 +16,5 @@
     color: var(--rojo);
     text-decoration: underline;
     margin: 0.3rem 0rem;
+    cursor: pointer;
 }
