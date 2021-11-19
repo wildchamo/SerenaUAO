@@ -11,7 +11,7 @@ import BotonSoporte from "../restablecer/botonSoporte";
 import Notificacion from "../../componentes/Notificacion/Notificacion";
 import useModal from "../../hooks/useModal";
 import ModalEstado from "../../componentes/modalEstado/ModalEstado";
-
+import  Header from "../../componentes/header/header.js"
 //import CuestionarioModal from "../../componentes/CuestionarioModal/CuestonarioModal";
 
 const data = {
@@ -29,6 +29,7 @@ function Historial(){
 
     return (
         <div className="historial-body">
+            <Header/>
             <BotonSoporte/>
             <div className="Titulo">
                 <Link to="/Home">

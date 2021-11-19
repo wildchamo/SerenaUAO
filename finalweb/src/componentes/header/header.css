@@ -3,6 +3,8 @@
     height:62px;
     width:100%;
     text-align:start;
+    display:flex;
+    justify-content:space-between;
 }
 
 .headerr img{
