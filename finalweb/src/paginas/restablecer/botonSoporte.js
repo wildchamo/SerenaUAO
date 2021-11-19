@@ -28,7 +28,8 @@ render() {
   
         <Modal2 data={"restablecer"} show={this.state.show} handleClose={this.hideModal}>
           <div>
-              Soporte
+
+            
           </div>
 
 

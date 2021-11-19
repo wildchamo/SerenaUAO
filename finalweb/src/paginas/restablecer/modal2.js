@@ -1,5 +1,6 @@
 import './modal2.css';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import XBlanca from "../../imagenes/Xfondoblanco.png";
 
 const Modal2 = ({ handleClose, show, children,data }) => {
   const {texto}=data
@@ -8,12 +9,14 @@ const Modal2 = ({ handleClose, show, children,data }) => {
   return (
     <div className={showHideClassName}>
       <section className="modal-main2">
-        {children}       
+        {children} 
+        <div className="tituloModal">      
         <Link to={texto}>
-        <button type="button" onClick={handleClose}>
-          Aceptar
-        </button>
-        </Link> 
+        <img src={XBlanca} onClick={handleClose}>
+        </img>
+        </Link>
+       <h4> Soporte </h4>
+        </div> 
       </section>
     </div>
   );
