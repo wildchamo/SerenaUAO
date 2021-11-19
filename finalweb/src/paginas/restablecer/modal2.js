@@ -12,7 +12,7 @@ const Modal2 = ({ handleClose, show, children,data }) => {
     <div className={showHideClassName}>
       <section className="modal-main2">
         {children} 
-        <div className="tituloModal">      
+        <div className="tituloModalJ">      
         <Link to={texto}>
         <img src={XBlanca} onClick={handleClose}>
         </img>
