@@ -26,7 +26,7 @@ const getIcon=function(icon,evento){
 }
 
 const ModalCancel=function({isOpen, closeModal, openmodalEstado, titulo, descripción, tipo, icon}){
-    const opandclo=function(){//Función para abrir el siguiente modal y cerrar el anterior
+    const opandclo=function(){
         closeModal()
         openmodalEstado()
     }
@@ -36,8 +36,8 @@ const ModalCancel=function({isOpen, closeModal, openmodalEstado, titulo, descrip
                 <div className="m-cancel-btn-back">{getIcon(icon,opandclo)}</div>
                 {getTipo(tipo)}
                 <div>
-                    <h2>{titulo}</h2>
-                    <h3>{descripción}</h3>
+                    <h2 className="m-cancel-title">{titulo}</h2>
+                    <h3 className="m-cancel-desc">{descripción}</h3>
                 </div>
                 <Boton tamaño="boton" titulo="Confirmar" evento={closeModal}/>
             </div>

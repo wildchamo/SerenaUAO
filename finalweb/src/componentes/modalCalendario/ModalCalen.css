@@ -1,0 +1,41 @@
+.m-calen-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #212121;
+    height: 29rem;
+}
+
+.calen-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.horas-cont{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 26rem;
+}
+
+.horario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hora-title{
+    
+}
+
+.horas-disp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 12rem;
+}

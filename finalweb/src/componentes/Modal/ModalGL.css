@@ -32,6 +32,22 @@
     align-items: center;
 }
 
+.modal-calen{
+    background: #fff;
+    padding: 10px;
+    width: 35.8rem;;
+    height: 32rem;
+    border-radius: 1rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-done{
+    
+}
+
 .modal-open  {
     display: grid;
 }

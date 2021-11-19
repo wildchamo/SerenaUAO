@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Boton from "../../componentes/Boton/Boton";
 import Cita from "../../componentes/Cita/Cita";
@@ -11,6 +11,8 @@ import ModalEstado from "../../componentes/modalEstado/ModalEstado";
 import CuestionarioModal from "../../componentes/CuestionarioModal/CuestonarioModal";
 import BotonSoporte from "../restablecer/botonSoporte";
 import ModalCancel from "../../componentes/modalCancel/ModalCancel";
+import ModalCalen from "../../componentes/modalCalendario/ModalCalen";
+import moment from "moment";
 
 const url = "https://run.mocky.io/v3/85d46403-89e5-4993-aac2-435b63ddc4e7"
 
@@ -32,11 +34,14 @@ const data2 = {
 }
 
 function Home() {
+    const [value, setValue] = useState(moment().locale('es', null));
+
     const [isOpenmodalEstado, openmodalEstado, closemodalEstado] = useModal(false);
     const [isOpenCancel, openmodalCancel, closeModalCancel] = useModal(false);
 
     const [isOpenCuest, openmodalCuest, closeModalCuest] = useModal(false);
     const [isOpenCalen, openmodalCalen, closeModalCalen] = useModal(false);
+    const [isOpenDone, openmodalDone, closeModalDone] = useModal(false);
 
     return (
         <div className="home-body">
@@ -72,7 +77,9 @@ function Home() {
             {/*Fin modales estado de cita*/}
             
             {/*Modales agendar citas*/}
-            <CuestionarioModal isOpen={isOpenCuest} closeModal={closeModalCuest}  />
+            <CuestionarioModal isOpen={isOpenCuest} closeModal={closeModalCuest}  openmodalCalen={openmodalCalen}/>
+            <ModalCalen isOpen={isOpenCalen} closeModal={closeModalCalen} openmodalCuest={openmodalCuest} openmodalDone={openmodalDone} value={value} setValue={setValue}/>
+            <ModalCancel isOpen={isOpenDone} closeModal={closeModalDone} openmodalEstado={openmodalCalen} tipo="Agendar" icon={false} titulo="¡Agendada!" descripción="Tu cita ha sido agendada exitosamente. Puedes consultar su estado en la sección “Citas agendadas”"/>
             
         </div>
     )

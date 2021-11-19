@@ -1,0 +1,15 @@
+.marco-hora{
+    padding: .1rem 1rem;
+    border: 2px solid var(--rojo);
+    border-radius: 1rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.texto-hora{
+    color: var(--gris);
+    font-weight: 300;
+}
