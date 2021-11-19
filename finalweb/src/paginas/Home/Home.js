@@ -13,14 +13,13 @@ import BotonSoporte from "../restablecer/botonSoporte";
 import ModalCancel from "../../componentes/modalCancel/ModalCancel";
 import ModalCalen from "../../componentes/modalCalendario/ModalCalen";
 import moment from "moment";
-import cargarDatos from "../../hooks/Rest";
 
-const url = "https://run.mocky.io/v3/85d46403-89e5-4993-aac2-435b63ddc4e7"
+const url = "https://run.mocky.io/v3/6db91af2-9a1e-461b-b002-89325ca5cb33";
 
 //const axios = require('axios').default;
 
 const data = {
-    Psicologo: "Juan Sebastian Zuñiga",
+    Psicologo: "-----",
     PeriodoAc: "2021-03",
     Estado: "Preaprobada",
     FechaSol: "18/06/21",
@@ -35,7 +34,18 @@ const data2 = {
     Estado: "Aprobada"
 }
 
+
 function Home() {
+
+  fetch(url)
+  .then((response) => {    
+    return response.json();    
+  })
+  .then((Citas) => {
+    console.log(Citas);
+  })
+
+  
     const [value, setValue] = useState(moment().locale('es', null));
 
     const [isOpenmodalEstado, openmodalEstado, closemodalEstado] = useModal(false);
