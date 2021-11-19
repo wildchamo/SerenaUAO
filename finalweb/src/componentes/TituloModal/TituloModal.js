@@ -6,7 +6,7 @@ const TituloModal= function({titulo,imagen}){
     return(
        <div className="tituloModal">
            <BotonVolver imagen={imagen} />
-           <h2 className="tituloModal-t">{titulo}</h2>
+           <h2 className="tituloModalTexto">{titulo}</h2>
        </div>
         )
 }

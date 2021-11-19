@@ -7,8 +7,8 @@ import CitaHisto from "../../componentes/CitaHisto/CitaHisto";
 import linea from "../../imagenes/linea.jpeg";
 import volver from "../../imagenes/volveratrasrojo.png";
 import TituloModal from "../../componentes/TituloModal/TituloModal";
-import botonx from "../../imagenes/Xfondoblanco.png";
-//import boton2 from "../../imagenes/Xfondorojo.png";
+//import botonx from "../../imagenes/Xfondoblanco.png";
+import boton2 from "../../imagenes/XfondoRojo.png";
 
 const data = {
     titulo: "Cita1",
@@ -26,7 +26,7 @@ class Historial extends Component {
                 <div className="Titulo">
                     <Link to="/Home">
                         <BotonVolver imagen={volver} />
-                        <TituloModal titulo="Agendar Cita" imagen={botonx} ></TituloModal>
+                        <TituloModal titulo="Agenda tu Cita" imagen={boton2} ></TituloModal>
                       
                     </Link> 
                     <Titulo texto="Historial de Citas"/>
