@@ -43,6 +43,7 @@
   border-radius: 0 0 10px 10px;
   padding: 9px 108px 9px 15px;
   display: flex;
+  margin-bottom: 366px;
 }
 .tituloModal h4 {
     font-style: normal;
@@ -60,4 +61,8 @@
 
 .Mensajes{
   padding: 30px 22px 42px 22px;
+}
+.Mensajes img{
+  margin-top: 10px;
+  margin-left: 203px;
 }
