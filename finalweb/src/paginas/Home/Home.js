@@ -13,6 +13,7 @@ import BotonSoporte from "../restablecer/botonSoporte";
 import ModalCancel from "../../componentes/modalCancel/ModalCancel";
 import ModalCalen from "../../componentes/modalCalendario/ModalCalen";
 import moment from "moment";
+import Header from "../../componentes/header/header"
 
 const url = "https://run.mocky.io/v3/6db91af2-9a1e-461b-b002-89325ca5cb33";
 //const url = "https://run.mocky.io/v3/42d67384-76fc-4f50-8f4e-acba0e5478d7";
@@ -64,7 +65,7 @@ function Home() {
 
     return (
         <div className="home-body">
-
+            <Header/>
             <BotonSoporte/>
             <div className="h-agendar">
                 <div className="h-bg-container">
