@@ -6,12 +6,12 @@ import Detalle from "../Cita/Detalles/Detalles";
 
 
 const CitaHisto=function({data, evento}){
-    const {Citaid,hora,FechaSol}=data
+    const {Citaid,Hora,FechaSol}=data
 
     return(
         <div className="date-card2">
             <h1 className="tituloCitaHisto"> Cita{Citaid}</h1>
-            <Detalle titulo="Hora:" contenido={hora}/>
+            <Detalle titulo="Hora:" contenido={Hora}/>
             <Detalle titulo="Fecha:" contenido={FechaSol}/>
             <Boton tamaño="botonfit" titulo="Más Información" evento={evento} ></Boton>           
         </div>
