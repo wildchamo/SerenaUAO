@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Boton from "../../componentes/Boton/Boton";
 import Cita from "../../componentes/Cita/Cita";
@@ -15,41 +15,48 @@ import ModalCalen from "../../componentes/modalCalendario/ModalCalen";
 import moment from "moment";
 
 const url = "https://run.mocky.io/v3/6db91af2-9a1e-461b-b002-89325ca5cb33";
+//const url = "https://run.mocky.io/v3/42d67384-76fc-4f50-8f4e-acba0e5478d7";
 
 //const axios = require('axios').default;
 
-const data = {
-    Psicologo: "-----",
-    PeriodoAc: "2021-03",
-    Estado: "Preaprobada",
-    FechaSol: "18/06/21",
-    Mensaje: "Su cita fue pre-aprobada.Se ha verificado su formato y cumple con las condiciones",
-    FyHMsj: "18/06/21 08:30",
-    Enlace: "meet-ssd-dfse-rtr"
+const getData =response_Data=>{
+    const{Psicologo,PeriodoAc,Estado,FechaSol,Mensaje,FyHMsj,Enlace}=response_Data;
+    const data3={
+                    Psicologo,PeriodoAc,Estado,FechaSol,Mensaje,FyHMsj,Enlace
+                }
+return data3;
 }
 
-const data2 = {
-    Psicologo: "Juan Sebastian Alba",
-    FechaSol: "19/05/21",
-    Estado: "Aprobada"
-}
-
-
+var data4={}
+var data5={}
 function Home() {
 
-  fetch(url)
-  .then((response) => {    
-    return response.json();    
-  })
-  .then((Citas) => {
-    console.log(Citas);
-  })
+   const[data,setData]=useState([]);
+
+   useEffect(()=>{
+
+    fetch(url)
+    .then((response) => {    
+      return response.json();    
+    })
+    .then((arreglo) => {
+      data4=getData(arreglo.Citas[0]);     
+      data5=getData(arreglo.Citas[1]);
+      setData(data4);          
+    })
+    
+   }, [setData])
+
+ 
 
   
     const [value, setValue] = useState(moment().locale('es', null));
 
     const [isOpenmodalEstado, openmodalEstado, closemodalEstado] = useModal(false);
     const [isOpenCancel, openmodalCancel, closeModalCancel] = useModal(false);
+
+    const [isOpenmodalEstado2, openmodalEstado2, closemodalEstado2] = useModal(false);
+    const [isOpenCancel2, openmodalCancel2, closeModalCancel2] = useModal(false);
 
     const [isOpenCuest, openmodalCuest, closeModalCuest] = useModal(false);
     const [isOpenCalen, openmodalCalen, closeModalCalen] = useModal(false);
@@ -72,8 +79,8 @@ function Home() {
             <div className="h-dates">
                 <Titulo texto="Citas agendadas" />
                 <div className="dates-container">
-                    <Cita data={data} evento={openmodalEstado} />
-                    <Cita data={data2} evento={openmodalEstado} />
+                    <Cita data={data4} evento={openmodalEstado} />
+                    <Cita data={data5} evento={openmodalEstado2} />
                     <Link to="/Historial" className="link-pass">
                         <Boton titulo="Historial de citas" tamaño="botonh" />
                     </Link>
@@ -81,7 +88,9 @@ function Home() {
             </div>
             
             {/*Modales estado de cita*/}
-            <ModalEstado isOpen={isOpenmodalEstado} closeModal={closemodalEstado} data={data} openModalCancel={openmodalCancel} seccion="home"/>
+            <ModalEstado isOpen={isOpenmodalEstado} closeModal={closemodalEstado} data={data4} openModalCancel={openmodalCancel} seccion="home"/>
+            <ModalEstado isOpen={isOpenmodalEstado2} closeModal={closemodalEstado2} data={data5} openModalCancel={openmodalCancel2} seccion="home"/>
+            
             <ModalCancel 
                 isOpen={isOpenCancel} 
                 closeModal={closeModalCancel} 
