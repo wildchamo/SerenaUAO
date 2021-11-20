@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 const Header = function () {
   return (
-    <header className="headerr">
+    <header className="headerrr">
       <Link to="/Home">
         <img src={logoHeader}/> 
       </Link>

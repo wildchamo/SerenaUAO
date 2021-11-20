@@ -11,11 +11,11 @@
 .modal-main2 {
   position: fixed;
   background: white;
-  width: 348px;
+  width: 22rem;
   height: 100vh;
   border-radius: 27px;
   top: 50%;
-  right: -22%;
+  right: -16%;
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
