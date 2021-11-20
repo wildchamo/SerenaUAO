@@ -25,20 +25,15 @@ class DatosUsuario extends Component {
   render() {
     return (
       
-        <div className="datosU" onClick={this.showModal}>
+        <div >
+         <div className="datosU" onClick={this.showModal}>
           <p>Nombre Usuario</p>
           <img src={Elipse} className="elipse"></img>
           <img src={Flecha} className="flecha"></img>
+         </div>
       
 
-        <ModalU
-          data={"restablecer"}
-          show={this.state.show}
-          handleClose={this.hideModal}
-        >
-          <div>
-            
-          </div>
+        <ModalU show={this.state.show} handleClose={this.hideModal}>
         </ModalU>
       </div>
     );
