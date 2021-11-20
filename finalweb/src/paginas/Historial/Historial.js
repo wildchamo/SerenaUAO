@@ -12,17 +12,8 @@ import Notificacion from "../../componentes/Notificacion/Notificacion";
 import useModal from "../../hooks/useModal";
 import ModalEstado from "../../componentes/modalEstado/ModalEstado";
 import  Header from "../../componentes/header/header.js"
-//import CuestionarioModal from "../../componentes/CuestionarioModal/CuestonarioModal";
 
-const data = {
-    Citaid: "1",
-    hora:"10:00 am",
-    FechaSol: "18/06/21",
-    Psicologo: "Alvaro Gomez",
-    PeriodoAc: "2021-03",
-    Mensaje: "Su cita fue pre-aprobada.Se ha verificado su formato y cumple con las condiciones",
-    FyHMsj: "18/06/21 08:30"
-} 
+
 const url="https://run.mocky.io/v3/1171e870-6e25-47f8-904a-efaf696ff3a0";
 const getData =response_Data=>{
     const{Citaid,Psicologo,PeriodoAc,Hora,FechaSol,Mensaje,FyHMsj}=response_Data;
@@ -90,7 +81,7 @@ function Historial(){
                 <CitaHisto data={data2}></CitaHisto>
                 <CitaHisto data={data3}></CitaHisto>
             </div>                 
-            <ModalEstado isOpen={isOpenmodalEstado} closeModal={closemodalEstado} data={data} seccion="historial"/>
+            <ModalEstado isOpen={isOpenmodalEstado} closeModal={closemodalEstado} data={data1} seccion="historial"/>
         </div>
     )
 }

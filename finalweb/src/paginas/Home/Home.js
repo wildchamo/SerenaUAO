@@ -89,7 +89,7 @@ function Home() {
             
             {/*Modales estado de cita*/}
             <ModalEstado isOpen={isOpenmodalEstado} closeModal={closemodalEstado} data={data4} openModalCancel={openmodalCancel} seccion="home"/>
-            <ModalEstado isOpen={isOpenmodalEstado2} closeModal={closemodalEstado2} data={data5} openModalCancel={openmodalCancel2} seccion="home"/>
+            <ModalEstado isOpen={isOpenmodalEstado2} closeModal={closemodalEstado2} data={data5} openModalCancel={openmodalCancel} seccion="home"/>
             
             <ModalCancel 
                 isOpen={isOpenCancel} 
