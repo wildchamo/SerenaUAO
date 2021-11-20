@@ -14,10 +14,10 @@ import ModalCancel from "../../componentes/modalCancel/ModalCancel";
 import ModalCalen from "../../componentes/modalCalendario/ModalCalen";
 import moment from "moment";
 
-const url = "https://run.mocky.io/v3/6db91af2-9a1e-461b-b002-89325ca5cb33";
-//const url = "https://run.mocky.io/v3/42d67384-76fc-4f50-8f4e-acba0e5478d7";
+//const url = "https://run.mocky.io/v3/6db91af2-9a1e-461b-b002-89325ca5cb33";//url santiago
 
-//const axios = require('axios').default;
+const url = "https://run.mocky.io/v3/b6547fc8-f94c-4023-9248-5d9b2c1d90a1";//url juan david
+
 
 const getData =response_Data=>{
     const{Psicologo,PeriodoAc,Estado,FechaSol,Mensaje,FyHMsj,Enlace}=response_Data;

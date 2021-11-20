@@ -23,7 +23,11 @@ const data = {
     Mensaje: "Su cita fue pre-aprobada.Se ha verificado su formato y cumple con las condiciones",
     FyHMsj: "18/06/21 08:30"
 } 
-const url="https://run.mocky.io/v3/1171e870-6e25-47f8-904a-efaf696ff3a0";
+//const url="https://run.mocky.io/v3/1171e870-6e25-47f8-904a-efaf696ff3a0";//url santiago
+
+const url="https://run.mocky.io/v3/4783fd63-a696-4595-b29b-3275cff0253d";//url juan david
+
+
 const getData =response_Data=>{
     const{Citaid,Psicologo,PeriodoAc,Hora,FechaSol,Mensaje,FyHMsj}=response_Data;
     const data3={Citaid,

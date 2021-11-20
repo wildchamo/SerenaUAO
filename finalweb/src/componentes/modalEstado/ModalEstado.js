@@ -45,15 +45,33 @@ const getTabla=function(seccion){
     }
 }
 
+const getBoton=function(seccion,evento){
+    if(seccion=="home"){
+        return(
+            <Boton tamaño="boton2" titulo="Cancelar cita" evento={evento}/>
+        )
+    }
+    if(seccion=="historial"){
+        return(
+            <div></div>
+        )
+    }
+}
+
 
 const ModalEstado = ({isOpen, closeModal, openModalCancel, data, seccion}) => {
     
     const {Mensaje,FyHMsj}=data
-
-    const opandclo=function(){//Función para abrir el siguiente modal y cerrar el anterior
-        closeModal()
-        openModalCancel()
+    const opandclo=function(){
+        if(seccion=="home"){
+            closeModal()
+            openModalCancel()
+        }
+        if(seccion=="historial"){
+            closeModal()
+        }
     }
+    
     return (
         <ModalGL tipo="modal-estado" isOpen={isOpen} closeModal={closeModal}>
             <div className="m-est-cont">
@@ -63,7 +81,7 @@ const ModalEstado = ({isOpen, closeModal, openModalCancel, data, seccion}) => {
                     {getTabla(seccion)}
                     <Tabla fecha={FyHMsj} mensaje={Mensaje}/>
                 </div>
-                <Boton tamaño="boton2" titulo="Cancelar cita" evento={opandclo}/>
+                {getBoton(seccion,opandclo)}
             </div>
         </ModalGL>
     )
