@@ -12,7 +12,6 @@ import Notificacion from "../../componentes/Notificacion/Notificacion";
 import useModal from "../../hooks/useModal";
 import ModalEstado from "../../componentes/modalEstado/ModalEstado";
 import  Header from "../../componentes/header/header.js"
-//import CuestionarioModal from "../../componentes/CuestionarioModal/CuestonarioModal";
 
 const data = {
     Citaid: "1",
@@ -94,7 +93,7 @@ function Historial(){
                 <CitaHisto data={data2}></CitaHisto>
                 <CitaHisto data={data3}></CitaHisto>
             </div>                 
-            <ModalEstado isOpen={isOpenmodalEstado} closeModal={closemodalEstado} data={data} seccion="historial"/>
+            <ModalEstado isOpen={isOpenmodalEstado} closeModal={closemodalEstado} data={data1} seccion="historial"/>
         </div>
     )
 }
