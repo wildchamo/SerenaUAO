@@ -53,12 +53,12 @@ class Restablecer extends Component {
 
         <Modal show={this.state.show} handleClose={this.hideModal}>
           <h2>Correo enviado con éxito</h2>
-          <p className="parrafoModal">
+          <h5 className="parrafoModal">
             Se ha enviado un email para que puedas restablecer tu contraseña con
             éxito.
-          </p>
-          <br/>
-          <p>Contiene instrucciones sencillas para confirmar y completar el cambio de contraseña. </p>
+          </h5>
+          
+          <h5>Contiene instrucciones sencillas para confirmar y completar el cambio de contraseña. </h5>
         </Modal>
       </div>
     );
